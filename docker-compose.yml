@@ -18,6 +18,6 @@ db:
     MYSQL_ROOT_PASSWORD: root
     MYSQL_USER: admin
     MYSQL_PASSWORD: test
-    MYSQL_DATABASE: directorio-docker
+    MYSQL_DATABASE: directorio
   ports:
     - "8889:3306"

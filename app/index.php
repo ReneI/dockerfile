@@ -31,7 +31,7 @@
   
               <?php
 
-$conexion=mysqli_connect("localhost", "root", "", "directorio-docker");
+$conexion=mysqli_connect("localhost", "root", "", "directorio");
     $consulta="SELECT * FROM directorio";
     $query=mysqli_query($conexion, $consulta);
     ?>
