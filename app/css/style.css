@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|Nanum+Gothic|Titillium+Web');
+
+body 
+{
+      box-sizing: border-box;
+
+  margin:0;
+    background-size: cover;
+  padding:0;
+  display:flex;
+  min-height: 100vh;
+  flex-direction:column;
+justify-content:flex-start;
+  align-items:center;
+  background-color: #000;
+  background-repeat: no-repeat, repeat;
+}
+.header{
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to bottom, rgba(254,255,255,1) 0%,rgba(10,9,6,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#0a0906',GradientType=0 ); /* IE6-9 */
+  display:grid;
+  grid-template-columns: 20% 80%;
+  
+}
+a{
+  text-decoration: none;
+  padding: 10px;
+}
+.buscador a:hover{
+color:white;
+}
+.buscador a{
+  display:flex;
+  flex-direction: row;
+  text-decoration: none;
+  color:lightblue;
+  font-style: italic;
+  font-size:18px;
+}
+ul{
+  
+  display:flex;
+  justify-content:center;
+  align-items:center
+}
+ul li{
+  display:inline-block;
+  height: 100%;
+}
+
+ul li a{
+padding: 10px;
+}
+li:hover{
+background-color: #fff;
+}
+
+.logo{
+  display:inline-block;
+  padding: 20px;
+  margin-left:10px;
+  font-style: italic;
+  font-size:30px;
+  text-align:center;
+}
+.container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit  ,minmax(300px, 1fr));
+  grid-gap:30px;
+  padding:20px;
+  box-sizing:border-box;
+   width: 1200px;
+  margin: 0 auto;
+}
+.container .box{
+  border-radius:10px;
+  position:relative;
+padding:30px;
+  text-align:center;
+  background: #fff;
+    overflow:hidden;
+
+}
+.container .box:hover{
+  text-align:center;
+  background: #f43;
+}
+.container .box p{
+  z-index: 2;
+  margin: 5px;
+padding:0px;
+  transition: .4s;
+
+    text-align: justify;
+    text-justify: inter-word;
+  text-shadow: 2px 2px 4px white;
+
+}
+.container .box h1 span{
+  z-index:2;
+  font-weight: 600;
+  color:gray;
+  font-size:16px;
+  transition:0.7s;
+  
+}
+.container .box h1{
+  margin: 0;
+padding:0px;
+  color:pink;
+  text-transform: uppercase;
+  transition: .4s;
+  text-align:center;
+  font-family: 'Nanum Gothic', sans-serif;
+
+  font-weight: 700;
+  line-height:40px;
+  z-index:5;
+}
+
+.container .box img{
+  z-index:1;
+  position:absolute;
+margin:0 auto 20px;
+  top:0;
+  left:60%;
+  width: 100px;
+  height: 100px;
+  overflow:hidden;
+  border-radius:59%;
+  transform:translate(50%);
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  object-fit: cover;
+
+}
+.container .box .img{
+  
+  
+}
+
+.container .box:before{
+  content: '';
+  top:0;
+  left:0;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+background-image:url('https://cdn0.iconfinder.com/data/icons/elite-general/513/quotes-512.png');
+  background-size:cover;
+  border-radius:50%;  transition:0.4s;
+
+}
+.container .box:hover:before{
+  transform: translateY(30px);
+  opacity: .4;
+  transition:.4;
+}
+.logo_img{
+  width: 100px;
+  height: 80px;
+}
+.titulo{
+font-family: 'Titillium Web', sans-serif;
+color:#fff;
+font-size: 17px;
+  text-transform: uppercase;
+
+
+}
+@media screen and (max-width: 992px) {
+  body {
+    background-color: #000;
+  }
+  .container{
+  grid-template-columns: auto;
+   width: 100%;
+
+
+  }
+
+  .box{
+
+
+  }
+}
