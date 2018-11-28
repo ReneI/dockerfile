@@ -1,4 +1,3 @@
-
 web:
    image: tutum/apache-php
    environment:
