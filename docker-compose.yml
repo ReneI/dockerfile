@@ -17,7 +17,7 @@ phpmyadmin:
   environment:
     MYSQL_USER: admin
     MYSQL_PASSWORD: test
-    MYSQL_DATABASE: database
+    MYSQL_DATABASE: directorio
 db:
   image: mariadb
   restart: always
