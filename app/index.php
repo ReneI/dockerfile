@@ -31,7 +31,7 @@
   
               <?php
 
-$conexion=mysqli_connect("localhost", "admin", "test", "directorio");
+$conexion=mysqli_connect("localhost:8889", "admin", "test", "directorio");
     $consulta="SELECT * FROM directorio";
     $query=mysqli_query($conexion, $consulta);
     ?>
